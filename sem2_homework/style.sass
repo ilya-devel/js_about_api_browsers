@@ -1,0 +1,53 @@
+@import 'variables'
+
+*
+    margin: 0
+    padding: 0
+
+.center
+    width: $widthImage
+    margin-left: auto
+    margin-right: auto
+
+#imageBox
+    position: relative
+
+    img
+        width: 100%
+        border-radius: 5px
+
+    .arrows
+        position: absolute
+        width: 50px
+        top: calc( 50% - 60px / 2 )
+        opacity: 0.3
+
+        &:hover
+            fill: white
+
+    #previousImage
+        left: 20px
+
+    #nextImage
+        right: 20px
+
+
+#tapeImages
+    height: 100px
+    width: $widthImage
+    margin-top: 20px
+    display: flex
+    gap: 5px
+    overflow-x: auto
+    border-radius: 5px
+
+    img
+        border-radius: 5px
+
+
+.show-image
+    margin-top: 50px
+    margin-bottom: 50px
+    border: 1px dotted grey
+    border-radius: 5px
+    padding: 10px
