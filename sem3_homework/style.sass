@@ -1,0 +1,93 @@
+@import 'variables'
+
+*
+    margin: 0
+    padding: 0
+
+.center
+    width: $widthContent
+    margin-left: auto
+    margin-right: auto
+
+.title
+    font-size: 24px
+    font-weight: 900
+    text-align: center
+    margin-top: 50px
+    margin-bottom: 50px
+
+.box-title
+    font-size: 18px
+    font-weight: 900
+
+.content
+    display: flex
+    flex-direction: row
+    gap: 20px
+    position: relative
+
+.photo-box
+    width: calc( $widthContent - $widthHistory )
+    border: 1px dotted grey
+    border-radius: 5px
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+    img
+        width: 100%
+        border-radius: 5px
+
+    .head-row
+        font-size: 18px
+        font-weight: 900
+
+        .photograph-name
+            font-weight: 400
+
+    .favorite-info
+        display: flex
+        flex-direction: row
+        justify-content: end
+        align-items: center
+        gap: 10px
+
+        .fav-icon
+            width: 25px
+
+        .liked
+            fill: red
+
+.history-box
+    position: sticky
+    top: 50px
+    height: 520px
+
+    width: $widthHistory
+    border: 1px dotted grey
+    border-radius: 5px
+    padding: 10px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    .history-items
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        gap: 20px
+        justify-content: space-between
+
+        .history-item
+            width: 100px
+            height: 100px
+            display: flex
+            align-items: center
+            border: 1px dotted grey
+            border-radius: 5px
+            padding: 2px
+
+            img
+                width: 100%
+                height: 100%

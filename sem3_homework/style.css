@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+
+.photo-box {
+  width: 650px;
+  border: 1px dotted grey;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+.photo-box .head-row {
+  font-size: 18px;
+  font-weight: 900;
+}
+.photo-box .head-row .photograph-name {
+  font-weight: 400;
+}
+.photo-box .favorite-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.photo-box .favorite-info .fav-icon {
+  width: 25px;
+}
+.photo-box .favorite-info .liked {
+  fill: red;
+}
+
+.history-box {
+  position: sticky;
+  top: 50px;
+  height: 520px;
+  width: 250px;
+  border: 1px dotted grey;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.history-box .history-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+.history-box .history-items .history-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border: 1px dotted grey;
+  border-radius: 5px;
+  padding: 2px;
+}
+.history-box .history-items .history-item img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
